@@ -1,0 +1,50 @@
+{
+  "database": {
+    "type": "sqlite",
+    "path": "meadbro.db",
+    "host": null,
+    "port": null,
+    "username": null,
+    "password": null,
+    "database": null
+  },
+  "redis": {
+    "enabled": false,
+    "url": "redis://localhost:6379",
+    "password": null,
+    "db": 0
+  },
+  "cors": {
+    "enabled": true,
+    "origins": [
+      "http://localhost:3000",
+      "https://localhost:3000"
+    ],
+    "methods": [
+      "*"
+    ],
+    "headers": [
+      "*"
+    ],
+    "credentials": true
+  },
+  "auth": {
+    "secret_key": "your-secret-key-change-in-production",
+    "algorithm": "HS256",
+    "access_token_expire_minutes": 30,
+    "google_client_id": null,
+    "google_client_secret": null,
+    "rp_id": "localhost",
+    "rp_name": "MeadBro",
+    "origin": "http://localhost:3000"
+  },
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8000,
+    "reload": false,
+    "log_level": "INFO",
+    "ssl_enabled": false,
+    "ssl_keyfile": null,
+    "ssl_certfile": null
+  }
+}
